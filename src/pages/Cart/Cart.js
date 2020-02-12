@@ -10,7 +10,7 @@ import { FaMinusCircle, FaPlusCircle, MdClose } from 'react-icons/all';
 import Container from './CartStyles';
 import Button from '../../components/Button/Button';
 
-function Cart({ cart, changeQuantity, removeFromCart }) {
+function Cart({ cart, total, changeQuantity, removeFromCart }) {
   return (
     <Container>
       <table>
@@ -24,7 +24,7 @@ function Cart({ cart, changeQuantity, removeFromCart }) {
           </tr>
         </thead>
         <tbody>
-          {cart.products.map(product => (
+          {cart.map(product => (
             <tr key={product.id}>
               <td className="image">
                 <img src={product.image} alt={product.name} />
@@ -73,7 +73,7 @@ function Cart({ cart, changeQuantity, removeFromCart }) {
         <div className="inner">
           <div className="top">
             <h1>Total</h1>
-            <span className="price">US$ {cart.total.toFixed(2)}</span>
+            <span className="price">US$ {total.toFixed(2)}</span>
           </div>
           <Button text="Checkout" />
         </div>
@@ -84,7 +84,14 @@ function Cart({ cart, changeQuantity, removeFromCart }) {
 }
 
 const mapStateToProps = state => ({
-  cart: state.cart,
+  cart: state.cart.map(product => ({
+    ...product,
+    total: product.price * product.quantity,
+  })),
+  total: state.cart.reduce(
+    (previous, current) => current.price * current.quantity + previous,
+    0,
+  ),
 });
 
 const mapDispatchToProps = dispatch =>
