@@ -27,6 +27,8 @@ Header.propTypes = {
   cartItemQty: PropTypes.number.isRequired,
 };
 
-export default connect(state => ({
+const mapStateToProps = state => ({
   cartItemQty: state.cart.products.length,
-}))(Header);
+});
+
+export default connect(mapStateToProps)(Header);

@@ -83,12 +83,11 @@ function Cart({ cart, changeQuantity, removeFromCart }) {
   );
 }
 
+const mapStateToProps = state => ({
+  cart: state.cart,
+});
+
 const mapDispatchToProps = dispatch =>
   bindActionCreators(CartActions, dispatch);
 
-export default connect(
-  state => ({
-    cart: state.cart,
-  }),
-  mapDispatchToProps,
-)(Cart);
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);
