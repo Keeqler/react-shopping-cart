@@ -10,7 +10,7 @@ import { FaMinusCircle, FaPlusCircle, MdClose } from 'react-icons/all';
 import Container from './CartStyles';
 import Button from '../../components/Button/Button';
 
-function Cart({ cart, total, changeQuantity, removeFromCart }) {
+function Cart({ cart, total, changeQuantityRequest, removeFromCart }) {
   return (
     <Container>
       <table>
@@ -40,7 +40,7 @@ function Cart({ cart, total, changeQuantity, removeFromCart }) {
                   <button
                     type="button"
                     onClick={() => {
-                      changeQuantity(product.id, product.quantity - 1);
+                      changeQuantityRequest(product.id, product.quantity - 1);
                     }}
                   >
                     <FaMinusCircle size="100%" />
@@ -49,7 +49,7 @@ function Cart({ cart, total, changeQuantity, removeFromCart }) {
                   <button
                     type="button"
                     onClick={() => {
-                      changeQuantity(product.id, product.quantity + 1);
+                      changeQuantityRequest(product.id, product.quantity + 1);
                     }}
                   >
                     <FaPlusCircle size="100%" />

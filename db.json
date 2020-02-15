@@ -42,5 +42,35 @@
       "price": 19.99,
       "image": "https://steamcdn-a.akamaihd.net/steam/apps/359550/capsule_616x353.jpg"
     }
+  ],
+  "stock": [
+    {
+      "id": 1,
+      "quantity": 5
+    },
+    {
+      "id": 2,
+      "quantity": 3
+    },
+    {
+      "id": 3,
+      "quantity": 5
+    },
+    {
+      "id": 4,
+      "quantity": 7
+    },
+    {
+      "id": 5,
+      "quantity": 1
+    },
+    {
+      "id": 6,
+      "quantity": 9
+    },
+    {
+      "id": 7,
+      "quantity": 12
+    }
   ]
 }

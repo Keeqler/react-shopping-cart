@@ -1,5 +1,10 @@
-export const addToCart = product => ({
-  type: '@cart/ADD',
+export const addToCartRequest = id => ({
+  type: '@cart/ADD_REQUEST',
+  id,
+});
+
+export const addToCartSuccess = product => ({
+  type: '@cart/ADD_SUCCESS',
   product,
 });
 
@@ -8,8 +13,14 @@ export const removeFromCart = id => ({
   id,
 });
 
-export const changeQuantity = (id, quantity) => ({
-  type: '@cart/CHANGE_QUANTITY',
+export const changeQuantityRequest = (id, quantity) => ({
+  type: '@cart/CHANGE_QUANTITY_REQUEST',
+  id,
+  quantity,
+});
+
+export const changeQuantitySuccess = (id, quantity) => ({
+  type: '@cart/CHANGE_QUANTITY_SUCCESS',
   id,
   quantity,
 });

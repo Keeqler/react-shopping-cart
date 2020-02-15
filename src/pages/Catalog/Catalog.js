@@ -9,7 +9,7 @@ import * as CartActions from '../../store/modules/cart/actions';
 import Container from './CatalogStyles';
 import Button from '../../components/Button/Button';
 
-function Catalog({ addToCart }) {
+function Catalog({ addToCartRequest }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -31,7 +31,10 @@ function Catalog({ addToCart }) {
             <span className="product-name">{product.name}</span>
             <strong className="product-price">US$ {product.price}</strong>
           </figcaption>
-          <Button text="Add to cart" onClick={() => addToCart(product)} />
+          <Button
+            text="Add to cart"
+            onClick={() => addToCartRequest(product.id)}
+          />
         </figure>
       ))}
     </Container>
