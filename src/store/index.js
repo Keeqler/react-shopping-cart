@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { createStore, applyMiddleware, compose } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 

@@ -2,6 +2,6 @@ import { all } from 'redux-saga/effects';
 
 import cart from './cart/sagas';
 
-export default function*() {
+export default function* () {
   return yield all([cart]);
 }

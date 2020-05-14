@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Catalog from './pages/Catalog/Catalog';
-import Cart from './pages/Cart/Cart';
+import Cart from '~/pages/Cart';
+import Catalog from '~/pages/Catalog';
 
 export default function Routes() {
   return (

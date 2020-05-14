@@ -1,13 +1,15 @@
 import React from 'react';
-import { Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import { Router } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 
-import history from './services/history';
-import store from './store';
+import history from '~/services/history';
 
-import GlobalStylesheet from './components/GlobalStylesheet';
-import Header from './components/Header/Header';
+import GlobalStylesheet from '~/components/GlobalStylesheet';
+import Header from '~/components/Header';
+
+import store from '~/store';
+
 import Routes from './Routes';
 
 export default function App() {
