@@ -27,6 +27,7 @@
   "scripts": {
     "start-json-server": "json-server --watch db.json --host 0.0.0.0 --port 3333",
     "start": "react-app-rewired start",
+    "start-production": "yarn run build && serve -s build -l $PORT",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
@@ -63,6 +64,7 @@
     "json-server": "^0.16.1",
     "prettier": "^2.0.5",
     "prettier-eslint": "^9.0.1",
-    "react-app-rewired": "^2.1.6"
+    "react-app-rewired": "^2.1.6",
+    "serve": "^11.3.0"
   }
 }
