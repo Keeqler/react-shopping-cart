@@ -4,6 +4,7 @@
 
 <h1>📸 Preview</h1>
 <p align="center"><img src="public/demo.gif"></p>
+<h2 align="center"><a href="">🔥 Click to access demo 🔥</a></h2>
 
 <h1>🚀 What I used</h1>
 
@@ -13,29 +14,26 @@
 - [Redux](https://redux.js.org)
 - [Redux Saga](https://redux-saga.js.org)
 - [Styled Components](https://styled-components.com)
-- [JSON Server](https://github.com/typicode/json-server)
-- [Docker Compose](https://www.docker.com)
 
 <h1>🎉 Running</h1>
 
-### Requirements
+### ⚠️ Requirements
 
-- [Docker Compose](https://www.docker.com)
+- [NodeJS](https://nodejs.org)
+- [Yarn](https://yarnpkg.com)
 
-### Getting started
+### 🔥 Running the React app
 
-Open up your terminal and clone this repo with the following command:
-
-```shell
-$ git clone http://github.com/keeqler/react-shopping-cart
-```
-
-### Running the JSON Server and the React app
-
-In the project's directory root, run:
+Install the dependencies:
 
 ```shell
-$ docker-compose up -d
+$ yarn
 ```
 
-You can now access `localhost:3000` in your browser.
+Start the React app:
+
+```shell
+$ yarn start
+```
+
+You will be able to access it in your browser at http://localhost:3000
