@@ -2,7 +2,6 @@ import React from 'react';
 import {
   FaMinusCircle,
   FaPlusCircle,
-  MdClose,
   GoCheck,
   MdArrowBack,
   FaTrash,
