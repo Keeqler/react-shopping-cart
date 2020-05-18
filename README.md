@@ -4,7 +4,7 @@
 
 <h1>📸 Preview</h1>
 <p align="center"><img src="public/demo.gif"></p>
-<h2 align="center"><a href="">🔥 Click to access demo 🔥</a></h2>
+<h2 align="center"><a href="https://keeqler-react-shopping-cart.herokuapp.com/">🔥 Click to access demo 🔥</a></h2>
 
 <h1>🚀 What I used</h1>
 
