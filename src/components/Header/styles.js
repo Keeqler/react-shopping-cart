@@ -32,5 +32,8 @@ export const CartLink = styled(Link)`
   flex-direction: row;
   font-size: 18px;
   font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   color: var(--text);
 `;

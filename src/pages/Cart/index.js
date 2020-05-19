@@ -43,17 +43,17 @@ function Cart({ cart, total, changeQuantityRequest, removeFromCart }) {
       <CartTable>
         <HeadContainer>
           <tr>
-            <ImageHead />
+            <ImageHead hideOnMobile />
             <DetailsHead>Product</DetailsHead>
             <QuantityHead>Quantity</QuantityHead>
-            <TotalHead>Total</TotalHead>
+            <TotalHead hideOnMobile>Total</TotalHead>
             <RemoveHead />
           </tr>
         </HeadContainer>
         <tbody>
           {cart.map(product => (
             <ProductRow key={product.id}>
-              <ProductCell>
+              <ProductCell hideOnMobile>
                 <ProductImage src={product.image} alt={product.name} />
               </ProductCell>
               <ProductCell>
@@ -83,7 +83,7 @@ function Cart({ cart, total, changeQuantityRequest, removeFromCart }) {
                   />
                 </ProductQuantityContainer>
               </ProductCell>
-              <ProductCell>
+              <ProductCell hideOnMobile>
                 <ProductTotal>US$ {product.total.toFixed(2)}</ProductTotal>
               </ProductCell>
               <ProductCell>
