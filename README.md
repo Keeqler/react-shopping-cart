@@ -4,9 +4,9 @@
 
 <h1>📸 Preview</h1>
 <p align="center"><img src="public/demo.gif"></p>
-<h2 align="center"><a href="https://keeqler-react-shopping-cart.herokuapp.com/">🔥 Click to access demo 🔥</a></h2>
+<h2 align="center"><a href="https://keeqler-react-shopping-cart.herokuapp.com/">🚀 Click to access demo 🚀</a></h2>
 
-<h1>🚀 What I used</h1>
+<h1>🔥 Technologies/libraries</h1>
 
 - Javascript
 - [NodeJS](https://nodejs.org)
@@ -22,7 +22,7 @@
 - [NodeJS](https://nodejs.org)
 - [Yarn](https://yarnpkg.com)
 
-### 🔥 Running the React app
+### 🚀 Running the React app
 
 Install the dependencies:
 
@@ -36,4 +36,4 @@ Start the React app:
 $ yarn start
 ```
 
-You will be able to access it in your browser at http://localhost:3000
+You will be able to access it in your browser at http://localhost:3000.
